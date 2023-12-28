@@ -97,9 +97,6 @@ def worker(zip_path, file_list, worker_num, total_docs, total_tokens, total_work
     path = 'indexes/' + str(worker_num) + '.csv'
     index_dump(path)
 
-    # path = 'textIndex/' + str(worker_num) + '.csv'
-    # text_dump(path, text_data)
-
     global indexes
     indexes = {}
     text_data = ''

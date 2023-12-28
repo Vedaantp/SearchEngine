@@ -86,37 +86,6 @@ def convert_csv_to_dict(path):
 
     return csv_dict
 
-
-# def merge_csv(files, total_docs):
-
-#     merged = {}
-
-#     for file in files: 
-
-#         csv_data = convert_csv_to_dict('indexes/' + file)
-
-#         for key, value in csv_data.items():
-
-#             if key in merged:
-#                 merged[key]['doc_freq'] += csv_data[key]['doc_freq']
-
-#                 for url, data in csv_data[key]['docs'].items():
-#                     if url not in merged[key]['docs']:
-#                         merged[key]['docs'][url] = data                        
-#             else:
-#                 merged[key] = value
-    
-#     for key, value in merged.items():
-#         for url, data in merged[key]['docs'].items():
-#             merged[key]['docs'][url]['tf_idf'] = merged[key]['docs'][url]['tf_idf'] * (math.log10(total_docs / merged[key]['doc_freq']))
-
-#     merged = dict(sorted(merged.items()))
-
-#     dump_csv(merged, 'merged/merged.csv')
-
-#     return
-
-
 def merge_csv(files, total_docs):
 
     merged = {}

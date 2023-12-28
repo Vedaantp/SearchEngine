@@ -113,11 +113,12 @@ def tokenizing(soup, url, worker_num, text_data):
     global doc_num
     global indexes
 
+    total_tokens = 0
+    unique_tokens = 0
     content_type = ['title', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'span', 'body', 'p', 'b', 'i', 'u']
     content_text = []
     content_tokens = []
     n_grams_tokens = []
-    unique_tokens = 0
     pattern = r"[a-zA-Z0-9]{2,}"
     tokenizer = RegexpTokenizer(pattern)
     
@@ -193,8 +194,5 @@ def tokenizing(soup, url, worker_num, text_data):
 
     word_weights = {}
     word_frequency = {}
-
-    total_tokens = 0
-    unique_tokens = 0
 
     return unique_tokens

@@ -4,8 +4,6 @@ from indexPos import calc_index
 import os
 import datetime
 
-# machine 12 vedaantp
-
 if not os.path.exists('indexes/'):
     os.makedirs('indexes/')
 
@@ -21,10 +19,8 @@ start = str(datetime.datetime.now())
 total_docs, total_tokens = parser()
 
 merge_start(total_docs)
-# merge_text()
 
 calc_index()
-# calc_text()
 
 end = str(datetime.datetime.now())
 
