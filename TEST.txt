@@ -1,0 +1,155 @@
+Test Queries:
+Query, Old Response Time, New Response Time
+1. professor, 1.4s, .041s
+    - We considered this a good response time for our previous code, but the results were irrelevant.
+     To improve results we implemented cosine similarity. To improve the search times we merged all 
+     the partial indexes into one file.
+
+2. ai, .8s, .017s
+    - We considered this a good response time for our previous code, but the results were irrelevant.
+     To improve results we implemented cosine similarity. To improve the search times we merged all 
+     the partial indexes into one file.
+
+3. artificial intelligence, 1.6s, .012s
+    - We considered this a good response time for our previous code, but the results were irrelevant.
+     To improve results we implemented cosine similarity. To improve the search times we merged all 
+     the partial indexes into one file.5. acm, 1.2s, .033s
+
+4. cristina lopes, .7s, .0016s
+    - We considered this a good response time for our previous code, but the results were irrelevant.
+     To improve results we implemented cosine similarity. To improve the search times we merged all 
+     the partial indexes into one file.
+
+5. acm, 1.2s, .033s
+    - We considered this a good response time for our previous code, but the results were irrelevant.
+     To improve results we implemented cosine similarity. To improve the search times we merged all 
+     the partial indexes into one file.5. acm, 1.2s, .033s
+
+6. informatics, 1.5s, .049s
+    - We considered this a good response time for our previous code, but the results were irrelevant.
+     To improve results we implemented cosine similarity. To improve the search times we merged all 
+     the partial indexes into one file.5. acm, 1.2s, .033s
+
+7. stats, .6s, .0045s
+    - We considered this a good response time for our previous code, but the results were irrelevant.
+     To improve results we implemented cosine similarity. To improve the search times we merged all 
+     the partial indexes into one file.5. acm, 1.2s, .033s
+
+8. internship, 1s, .023s
+    - We considered this a good response time for our previous code, but the results were irrelevant.
+     To improve results we implemented cosine similarity. To improve the search times we merged all 
+     the partial indexes into one file.5. acm, 1.2s, .033s
+
+9. krone-martins, .6s, .007s
+    - We considered this a good response time for our previous code, but the results were irrelevant.
+     To improve results we implemented cosine similarity. To improve the search times we merged all 
+     the partial indexes into one file.5. acm, 1.2s, .033s
+
+10. python, .7s, .011s
+    - We considered this a good response time for our previous code, but the results were irrelevant.
+     To improve results we implemented cosine similarity. To improve the search times we merged all 
+     the partial indexes into one file.5. acm, 1.2s, .033s
+
+11. uci, 4.5s, .19s
+    - We considered this a bad response time for our previous code, and the results were irrelevant. 
+    To improve the results we implemented cosine similarity and used the weights of the HTML text 
+    such as headers, bold, italicized, etc. to get a better scoring for urls. To improve the search 
+    time we used the complete merged index and the byte positions of the terms we were looking for to 
+    jump to the data we needed. We also stopped using multiprocessing which reduced the time significantly 
+    because there was less overhead. Another adjustment we made to the code is, we only search bigrams + trigrams 
+    unless the amount of terms in the query are less than 3 or if the bigrams + trigrams lenght is 0.
+
+12. master of software engineering, 14.9s, .05s
+    - We considered this a bad response time for our previous code, and the results were irrelevant. 
+    To improve the results we implemented cosine similarity and used the weights of the HTML text 
+    such as headers, bold, italicized, etc. to get a better scoring for urls. To improve the search 
+    time we used the complete merged index and the byte positions of the terms we were looking for to 
+    jump to the data we needed. We also stopped using multiprocessing which reduced the time significantly 
+    because there was less overhead. Another adjustment we made to the code is, we only search bigrams + trigrams 
+    unless the amount of terms in the query are less than 3 or if the bigrams + trigrams lenght is 0.
+
+13. details about uci, 10s, .0088s
+    - We considered this a bad response time for our previous code, and the results were irrelevant. 
+    To improve the results we implemented cosine similarity and used the weights of the HTML text 
+    such as headers, bold, italicized, etc. to get a better scoring for urls. To improve the search 
+    time we used the complete merged index and the byte positions of the terms we were looking for to 
+    jump to the data we needed. We also stopped using multiprocessing which reduced the time significantly 
+    because there was less overhead. Another adjustment we made to the code is, we only search bigrams + trigrams 
+    unless the amount of terms in the query are less than 3 or if the bigrams + trigrams lenght is 0.
+
+14. informatics professors at uci, 13s, .06s
+    - We considered this a bad response time for our previous code, and the results were irrelevant. 
+    To improve the results we implemented cosine similarity and used the weights of the HTML text 
+    such as headers, bold, italicized, etc. to get a better scoring for urls. To improve the search 
+    time we used the complete merged index and the byte positions of the terms we were looking for to 
+    jump to the data we needed. We also stopped using multiprocessing which reduced the time significantly 
+    because there was less overhead. Another adjustment we made to the code is, we only search bigrams + trigrams 
+    unless the amount of terms in the query are less than 3 or if the bigrams + trigrams lenght is 0.
+
+15. software engineering projects, 8s, .019s
+    - We considered this a bad response time for our previous code, and the results were irrelevant. 
+    To improve the results we implemented cosine similarity and used the weights of the HTML text 
+    such as headers, bold, italicized, etc. to get a better scoring for urls. To improve the search 
+    time we used the complete merged index and the byte positions of the terms we were looking for to 
+    jump to the data we needed. We also stopped using multiprocessing which reduced the time significantly 
+    because there was less overhead. Another adjustment we made to the code is, we only search bigrams + trigrams 
+    unless the amount of terms in the query are less than 3 or if the bigrams + trigrams lenght is 0.
+
+16. phd of artificial intelligence, 9s, .018s
+    - We considered this a bad response time for our previous code, and the results were irrelevant. 
+    To improve the results we implemented cosine similarity and used the weights of the HTML text 
+    such as headers, bold, italicized, etc. to get a better scoring for urls. To improve the search 
+    time we used the complete merged index and the byte positions of the terms we were looking for to 
+    jump to the data we needed. We also stopped using multiprocessing which reduced the time significantly 
+    because there was less overhead. Another adjustment we made to the code is, we only search bigrams + trigrams 
+    unless the amount of terms in the query are less than 3 or if the bigrams + trigrams lenght is 0.
+
+17. computer science events, 10s, .1s
+    - We considered this a bad response time for our previous code, and the results were irrelevant. 
+    To improve the results we implemented cosine similarity and used the weights of the HTML text 
+    such as headers, bold, italicized, etc. to get a better scoring for urls. To improve the search 
+    time we used the complete merged index and the byte positions of the terms we were looking for to 
+    jump to the data we needed. We also stopped using multiprocessing which reduced the time significantly 
+    because there was less overhead. Another adjustment we made to the code is, we only search bigrams + trigrams 
+    unless the amount of terms in the query are less than 3 or if the bigrams + trigrams lenght is 0.
+
+18. news at uci, 11s, .04s
+    - We considered this a bad response time for our previous code, and the results were irrelevant. 
+    To improve the results we implemented cosine similarity and used the weights of the HTML text 
+    such as headers, bold, italicized, etc. to get a better scoring for urls. To improve the search 
+    time we used the complete merged index and the byte positions of the terms we were looking for to 
+    jump to the data we needed. We also stopped using multiprocessing which reduced the time significantly 
+    because there was less overhead. Another adjustment we made to the code is, we only search bigrams + trigrams 
+    unless the amount of terms in the query are less than 3 or if the bigrams + trigrams lenght is 0.
+
+19. information retrieval, 5s, .004s
+    - We considered this a bad response time for our previous code, and the results were irrelevant. 
+    To improve the results we implemented cosine similarity and used the weights of the HTML text 
+    such as headers, bold, italicized, etc. to get a better scoring for urls. To improve the search 
+    time we used the complete merged index and the byte positions of the terms we were looking for to 
+    jump to the data we needed. We also stopped using multiprocessing which reduced the time significantly 
+    because there was less overhead. Another adjustment we made to the code is, we only search bigrams + trigrams 
+    unless the amount of terms in the query are less than 3 or if the bigrams + trigrams lenght is 0.
+
+20. artificial intelligence research, 5s, .015s
+    - We considered this a bad response time for our previous code, and the results were irrelevant. 
+    To improve the results we implemented cosine similarity and used the weights of the HTML text 
+    such as headers, bold, italicized, etc. to get a better scoring for urls. To improve the search 
+    time we used the complete merged index and the byte positions of the terms we were looking for to 
+    jump to the data we needed. We also stopped using multiprocessing which reduced the time significantly 
+    because there was less overhead. Another adjustment we made to the code is, we only search bigrams + trigrams 
+    unless the amount of terms in the query are less than 3 or if the bigrams + trigrams lenght is 0.
+
+Summary:
+We chose these tests queries because many of the terms within the queries have very high frequencies of document occurence
+in the index. Another reason we chose these queries is because we thought that these search requests could be something 
+that many users of a UCI search engine would look up.
+
+All most all the results were not very relevant to the search queries at first. Originally we were getting the product of
+the tf-idf score of a document, the weight of a term in that document, and the a score based on how many the n-gram length.
+Doing this would give a score that did not correctly evaluate the relevancy. To fix this we implemented cosine similarity and
+we use the term weights to adjust the score accordingly.
+
+The response times for all the queries were way too long because originally we had multiple indexes and we were using 
+multiprocessing to search through the indexes by query. This process was taking too long so we merged the indexes into one,
+and stopped using multiprocessing which significantly reduced the search times.

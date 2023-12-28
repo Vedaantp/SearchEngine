@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+
+    <style>
+        input#query {
+            width: 500px; /* Adjust the width as needed */
+        }
+    </style>
+</head>
+<body>
+    <h1 style="display: flex; justify-content: center; align-content: center;">Search Engine</h1>
+    <form style="display: flex; justify-content: center; align-content: center;" method="post" action="/search">
+        <label for="query"></label>
+        <input type="text" name="query" id="query" required>
+        <button type="submit">Search</button>
+    </form>
+    <h2 style="display: flex; justify-content: center; align-content: center;">Search Results for "{{ searchQuery }}"</h2>
+    <p style="display: flex; justify-content: center; align-content: center;">Response time in {{ runtime }} seconds</p>
+    <ul style="list-style-type: none;">
+        {% for result in results %}
+            <li style="padding-top: 10px; padding-bottom: 10px; font-size: 20px;">
+                <a href="{{ result['url'] }}">
+                    {{ result["url"] }}
+                </a>
+                <ul style="list-style-type: none;">
+                    <li style="padding-top: 10px; padding-bottom: 10px; font-size: 20px;">
+                        {{ result["summary"][:300] }}
+                    </li>
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+    <!-- <ul>
+        {% for result in result_arr %}
+            <li>
+                <a href='{{ result["url"] }}'>
+                    {{ result['summary'][:100] }}
+                </a>
+                <ul>
+                    <li>
+                        {{ result['summary'][:300] }}
+                    </li>
+                </ul>
+
+            </li>
+        {% endfor %}
+    </ul> -->
+</body>
+</html>

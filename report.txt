@@ -1,0 +1,10 @@
+################ Report ################
+Started Time: 2023-12-01 15:22:00.539116
+Ended Time: 2023-12-01 16:12:16.150429
+Total documents: 55363
+Total Tokens: 0
+Size of merged.csv: 9021214 KB
+Size of sorted.csv: 9021427 KB
+Size of index_positions.json: 1115037 KB
+Size of total index: 19157678 KB
+########################################
